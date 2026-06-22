@@ -1,0 +1,112 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# =========================
+# Conda / Virtual Environment
+# =========================
+.env
+.venv
+venv/
+ENV/
+env/
+
+# Conda
+conda-meta/
+*.conda
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# PyCharm
+# =========================
+.idea/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+train_log*.txt
+
+# =========================
+# Build / Distribution
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# PyTorch / Model Checkpoints
+# =========================
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+weights/
+saved_models/
+runs/
+
+# =========================
+# TensorBoard
+# =========================
+events.out.tfevents.*
+
+# =========================
+# Dataset / Large Files
+# =========================
+data/raw/
+data/processed/
+datasets/
+*.csv
+*.h5
+*.npy
+*.npz
+*.pkl
+
+# =========================
+# OSMnx Cache
+# =========================
+cache/
+
+# =========================
+# WandB
+# =========================
+wandb/
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.temp
+
+# =========================
+# Mac/Linux hidden files
+# =========================
+*.swp
+*.swo
+
+# =========================
+# Our Proposal
+# =========================
+*.pdf
+
+# =========================
+# Backups / experiment outputs
+# =========================
+*.bak
+results.json
