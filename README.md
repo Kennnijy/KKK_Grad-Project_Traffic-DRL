@@ -55,11 +55,11 @@ which is also a standalone evaluation harness for the routing policies.
 
 | Path | What it is |
 |---|---|
-| `STGAT/` | Spatial-Temporal Graph Attention Network — prediction model (METR-LA) |
-| `STGCN/` | Spatio-Temporal Graph Convolutional Network — prediction model |
-| `DRL-and-graph-neural-network-for-routing-problems/` | Upstream Residual E-GAT / PPO routing code (Lei et al. 2022) used as the DRL base |
+| `STGAT/` | STGAT prediction model — cloned from [xyk0058/STGAT](https://github.com/xyk0058/STGAT) |
+| `STGCN/` | STGCN prediction model — cloned from [hazdzz/STGCN](https://github.com/hazdzz/STGCN) |
+| `DRL-and-graph-neural-network-for-routing-problems/` | Residual E-GAT / PPO routing base — cloned from [Lei-Kun/DRL-…-routing-problems](https://github.com/Lei-Kun/DRL-and-graph-neural-network-for-routing-problems) |
 | **`integration/`** | **The core of this project**: prediction → decision pipeline, routing policies, the PPO/E-GAT agent, and the evaluation harness. See its [README](integration/README.md). |
-| `115_期末專題計劃書.pdf` | The project proposal (full method, references, evaluation plan) |
+| `*.pdf` | The three method papers (STGCN, STGAT, Residual E-GAT) — see Credits |
 | `requirements.txt` | Python dependencies (pip freeze of the `traffic_rl` env) |
 
 > Note: `STGAT/`, `STGCN/`, and `DRL-...` are upstream repositories with their own git
@@ -141,10 +141,20 @@ oracle is the current focus.
 
 ---
 
-## Team & references
+## Team
 
 東海大學 畢業專題 — **S12350312 黃子修 · S12350302 黃少鯤 · S12350131 江彥萱**
 
-Key references (full list in the proposal):
-Yu et al. 2018 (STGCN) · Kong et al. 2020 (STGAT) · Lei et al. 2022 (Residual E-GAT) ·
-Schulman et al. 2017 (PPO) · Wardrop 1952 (UE vs SO) · Lopez et al. 2018 (SUMO).
+## Credits & references
+
+This project builds on three open-source implementations; the corresponding papers are
+included in this folder as PDFs.
+
+| Module | Code (cloned from) | Paper |
+|---|---|---|
+| STGCN prediction | [hazdzz/STGCN](https://github.com/hazdzz/STGCN) | Yu, Yin & Zhu — *Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting*, IJCAI 2018 |
+| STGAT prediction | [xyk0058/STGAT](https://github.com/xyk0058/STGAT) | Kong et al. — *STGAT: Spatial-Temporal Graph Attention Networks for Traffic Flow Forecasting*, IEEE Access 2020 |
+| DRL routing | [Lei-Kun/DRL-and-graph-neural-network-for-routing-problems](https://github.com/Lei-Kun/DRL-and-graph-neural-network-for-routing-problems) | Lei et al. — *Solve routing problems with a residual edge-graph attention neural network*, Neurocomputing 2022 |
+
+Additional methods referenced: Schulman et al. 2017 (PPO) · Wardrop 1952
+(User-Equilibrium vs System-Optimum) · Lopez et al. 2018 (SUMO).
