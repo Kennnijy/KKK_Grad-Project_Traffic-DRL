@@ -158,5 +158,4 @@ included in this folder as PDFs.
 
 Additional methods referenced: Schulman et al. 2017 (PPO) · Wardrop 1952
 (User-Equilibrium vs System-Optimum) · Lopez et al. 2018 (SUMO).
-#   K K K _ G r a d - P r o j e c t _ T r a f f i c - D R L  
- 
+#
